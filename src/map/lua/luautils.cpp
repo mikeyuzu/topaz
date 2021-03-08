@@ -406,7 +406,7 @@ namespace luautils
     {
         TracyZoneScoped;
         TracyZoneString(funcName);
-        TracyZoneIString(PEntity->GetName());
+        TracyZoneIString(PSpell->getName());
 
         auto name = (const char*)PSpell->getName();
 
@@ -1558,12 +1558,13 @@ namespace luautils
         }
 
         auto name = (const char*)PChar->loc.zone->GetName();
+        auto zoneId = (const uint16*)PChar->loc.zone->GetID();
 
         sol::function onRegionLeave;
-        if (PChar->PInstance)
+        if (PChar->PInstance && zoneId == (const uint16*)PChar->PInstance->GetZone()->GetID())
         {
             auto instance_name = (const char*)PChar->PInstance->GetName();
-            onRegionLeave      = lua["tpz"]["zones"][name]["instance"][instance_name]["onRegionLeave"];
+            onRegionLeave = lua["tpz"]["zones"][name]["instance"][instance_name]["onRegionLeave"];
         }
         else
         {
@@ -1738,6 +1739,11 @@ namespace luautils
         std::optional<CLuaBaseEntity> optTarget = std::nullopt;
         if (PChar->m_event.Target)
         {
+            if (PChar->m_event.Target->objtype == TYPE_NPC)
+            {
+                PChar->m_event.Target->SetLocalVar("pauseNPCPathing", 0);
+            }
+
             optTarget = CLuaBaseEntity(PChar->m_event.Target);
         }
 
@@ -2098,9 +2104,9 @@ namespace luautils
             return { 56, 0, 0 };
         }
 
-        uint32 messageId = result.return_count() > 0 ? result.get<int32>() : 0;
-        uint32 param1    = result.return_count() > 1 ? result.get<int32>() : 0;
-        uint32 param2    = result.return_count() > 2 ? result.get<int32>() : 0;
+        uint32 messageId = result.get_type(0) == sol::type::number ? result.get<int32>(0) : 0;
+        uint32 param1    = result.get_type(1) == sol::type::number ? result.get<int32>(1) : 0;
+        uint32 param2    = result.get_type(2) == sol::type::number ? result.get<int32>(2) : 0;
 
         return { messageId, param1, param2 };
     }
@@ -2179,7 +2185,7 @@ namespace luautils
             return -1;
         }
 
-        uint32 retVal = result.return_count() ? result.get<int32>() : 0;
+        uint32 retVal = result.get_type(0) == sol::type::number ? result.get<int32>(0) : 0;
         return retVal;
     }
 
@@ -2232,7 +2238,7 @@ namespace luautils
             return {};
         }
 
-        uint32 retVal = result.return_count() ? result.get<int32>() : 0;
+        uint32 retVal = result.get_type(0) == sol::type::number ? result.get<int32>(0) : 0;
         if (retVal > 0)
         {
             return static_cast<SpellID>(retVal);
@@ -2268,7 +2274,7 @@ namespace luautils
             return -1;
         }
 
-        return result.return_count() ? result.get<int32>() : 0;
+        return result.get_type(0) == sol::type::number ? result.get<int32>(0) : 0;
     }
 
     // Called when mob is struck by a Weaponskill
@@ -2290,7 +2296,7 @@ namespace luautils
             return 0;
         }
 
-        return result.return_count() ? result.get<int32>() : 0;
+        return result.get_type(0) == sol::type::number ? result.get<int32>(0) : 0;
     }
 
     int32 OnMobInitialize(CBaseEntity* PMob)
@@ -2470,7 +2476,7 @@ namespace luautils
             return MaxAreas;
         }
 
-        return result.return_count() ? result.get<int32>() : MaxAreas;
+        return result.get_type(0) == sol::type::number ? result.get<int32>(0) : MaxAreas;
     }
 
     int32 OnBattlefieldInitialise(CBattlefield* PBattlefield)
@@ -3135,7 +3141,7 @@ namespace luautils
             return 0;
         }
 
-        return result.return_count() ? result.get<int32>() : 0;
+        return result.get_type(0) == sol::type::number ? result.get<int32>(0) : 0;
     }
 
     int32 OnMobSkillCheck(CBaseEntity* PTarget, CBaseEntity* PMob, CMobSkill* PMobSkill)
@@ -3158,7 +3164,7 @@ namespace luautils
             return 1;
         }
 
-        return result.return_count() ? result.get<int32>() : -5;
+        return result.get_type(0) == sol::type::number ? result.get<int32>(0) : -5;
     }
 
     int32 OnMobAutomatonSkillCheck(CBaseEntity* PTarget, CAutomatonEntity* PAutomaton, CMobSkill* PMobSkill)
@@ -3181,7 +3187,7 @@ namespace luautils
             return 1;
         }
 
-        return result.return_count() ? result.get<int32>() : -5;
+        return result.get_type(0) == sol::type::number ? result.get<int32>(0) : -5;
     }
 
     /***********************************************************************
@@ -3209,7 +3215,7 @@ namespace luautils
             return 47;
         }
 
-        return result.return_count() ? result.get<uint32>() : -5;
+        return result.get_type(0) == sol::type::number ? result.get<int32>(0) : -5;
     }
 
     /***********************************************************************
@@ -3305,7 +3311,7 @@ namespace luautils
             }
         }
 
-        return result.return_count() ? result.get<int32>() : 0;
+        return result.get_type(0) == sol::type::number ? result.get<int32>(0) : 0;
     }
 
     /************************************************************************
@@ -3343,7 +3349,7 @@ namespace luautils
             return 0;
         }
 
-        return result.return_count() ? result.get<int32>() : 0;
+        return result.get_type(0) == sol::type::number ? result.get<int32>(0) : 0;
     }
 
     void ClearVarFromAll(std::string varName)
@@ -3433,7 +3439,7 @@ namespace luautils
             return 0;
         }
 
-        return result.return_count() ? result.get<int32>() : 0;
+        return result.get_type(0) == sol::type::number ? result.get<int32>(0) : 0;
     }
 
     int32 OnInstanceTimeUpdate(CZone* PZone, CInstance* PInstance, uint32 time)
@@ -4136,7 +4142,7 @@ namespace luautils
             return false;
         }
 
-        return result.return_count() ? result.get<bool>() : false;
+        return result.get_type(0) == sol::type::boolean ? result.get<bool>() : false;
     }
 
     // Loads a Lua function with a fallback hierarchy
