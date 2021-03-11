@@ -80,11 +80,16 @@ zone_object.onRegionLeave = function(player, region)
 end
 
 zone_object.onGameHour = function(zone)
-    --[[
-        the hard-coded id that was here was wrong. there are 22 miasmas in attohwa chasm
-        starting at ID.npc.MIASMA_OFFSET. some are supposed to toggle open, but need retail test
-        to determine which.  for now, they're just statically set per npc_list.animation
-    --]]
+    local VanadielMinute = VanadielMinute()
+
+    for i = 16806304, 16806304 + 20 do
+        if VanadielMinute % 2 == 0 then
+            local npc = GetNPCByID(i);
+            if (npc ~= nil) then
+                npc:openDoor(); -- Attohwa Chasm miasma
+            end
+        end
+    end
 end
 
 zone_object.onEventUpdate = function(player, csid, option)
