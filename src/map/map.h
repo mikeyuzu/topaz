@@ -154,6 +154,7 @@ struct map_config_t
     uint16 seal_recast_time; // 印章ドロップリキャスト時間
     uint8  seal_drop_rate; // 印章ドロップ率
     bool   drop_list_shuffle; // ドロップ抽選順番をシャッフルする
+    uint8  blue_magic_learning_rate; // 青魔法ラーニング確率
 };
 
 /************************************************************************

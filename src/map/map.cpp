@@ -1504,6 +1504,10 @@ int32 map_config_read(const int8* cfgName)
         {
             map_config.drop_list_shuffle = atoi(w2);
         }
+        else if (strcmp(w1, "blue_magic_learning_rate") == 0)
+        {
+            map_config.blue_magic_learning_rate = atoi(w2);
+        }
         else
         {
             ShowWarning(CL_YELLOW "Unknown setting '%s' in file %s\n" CL_RESET, w1, cfgName);
