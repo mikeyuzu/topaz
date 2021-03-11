@@ -155,6 +155,7 @@ struct map_config_t
     uint8  seal_drop_rate; // 印章ドロップ率
     bool   drop_list_shuffle; // ドロップ抽選順番をシャッフルする
     uint8  blue_magic_learning_rate; // 青魔法ラーニング確率
+    uint8  mob_link_radius; // モンスターのリンクする距離
 };
 
 /************************************************************************
