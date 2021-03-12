@@ -1516,6 +1516,10 @@ int32 map_config_read(const int8* cfgName)
         {
             map_config.mount_anywhere_area = atoi(w2);
         }
+        else if (strcmp(w1, "unity_leader_trust_coefficient") == 0)
+        {
+            map_config.unity_leader_trust_coefficient = atoi(w2);
+        }
         else
         {
             ShowWarning(CL_YELLOW "Unknown setting '%s' in file %s\n" CL_RESET, w1, cfgName);

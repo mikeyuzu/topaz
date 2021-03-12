@@ -157,6 +157,7 @@ struct map_config_t
     uint8  blue_magic_learning_rate; // 青魔法ラーニング確率
     uint8  mob_link_radius; // モンスターのリンクする距離
     bool   mount_anywhere_area;      // どこでもマウントに乗れるようにする
+    uint8  unity_leader_trust_coefficient; // ユニティリーダーが使えるようになるためのユニティポイント系数
 };
 
 /************************************************************************
