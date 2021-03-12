@@ -40,7 +40,7 @@ ENABLE_ROE            = 1
 ENABLE_ROE_TIMED      = 1 -- Enable 4-hour timed records
 ENABLE_EXCHANGE_LIMIT = 1 -- Enable Maximum limit of sparks spent per Week (default retail behavior: 1)
 
-WEEKLY_EXCHANGE_LIMIT = 100000 -- Maximum amount of sparks/accolades that can be spent per week (default retail value: 100000)
+WEEKLY_EXCHANGE_LIMIT = 100000 -- Maximum amount of sparks that can be spent per week (default retail value: 100000)
 
 -- Currency Caps (Change at your own risk!)
 CAP_CURRENCY_ACCOLADES = 99999
@@ -52,6 +52,10 @@ CAP_CURRENCY_VALOR     = 50000
 ENABLE_MAGIAN_TRIALS = 1
 MAGIAN_TRIALS_MOBKILL_MULTIPLIER = 1
 MAGIAN_TRIALS_TRADE_MULTIPLIER = 1
+
+-- Login Campaign (Set to 0 if you don't want to run a Login Campaign)
+-- Please visit scripts/globals/events/login_campaign.lua for assigning the correct campaign.
+ENABLE_LOGIN_CAMPAIGN = 1
 
 -- TREASURE CASKETS
 -- Retail droprate = 0.1 (10%) with no other effects active
