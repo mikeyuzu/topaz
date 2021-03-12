@@ -156,6 +156,7 @@ struct map_config_t
     bool   drop_list_shuffle; // ドロップ抽選順番をシャッフルする
     uint8  blue_magic_learning_rate; // 青魔法ラーニング確率
     uint8  mob_link_radius; // モンスターのリンクする距離
+    bool   mount_anywhere_area;      // どこでもマウントに乗れるようにする
 };
 
 /************************************************************************
