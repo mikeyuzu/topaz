@@ -56,6 +56,10 @@ MAGIAN_TRIALS_TRADE_MULTIPLIER = 1
 -- Login Campaign (Set to 0 if you don't want to run a Login Campaign)
 -- Please visit scripts/globals/events/login_campaign.lua for assigning the correct campaign.
 ENABLE_LOGIN_CAMPAIGN = 1
+-- ログインボーナスを12ヶ月で自動ループさせる
+-- 毎月1日から23日までポイント受け取り、1日から28日まで交換可能にする
+-- tpz.events.loginCampaign.customprizesで設定したものが反映される
+CUSTOM_LOGIN_CAMPAIGN = 1
 
 -- TREASURE CASKETS
 -- Retail droprate = 0.1 (10%) with no other effects active
