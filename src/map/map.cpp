@@ -1520,6 +1520,10 @@ int32 map_config_read(const int8* cfgName)
         {
             map_config.unity_leader_trust_coefficient = atoi(w2);
         }
+        else if (strcmp(w1, "mounted_time_limit") == 0)
+        {
+            map_config.mounted_time_limit = atoi(w2);
+        }
         else
         {
             ShowWarning(CL_YELLOW "Unknown setting '%s' in file %s\n" CL_RESET, w1, cfgName);
