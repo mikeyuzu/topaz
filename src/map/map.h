@@ -159,6 +159,7 @@ struct map_config_t
     bool   mount_anywhere_area;      // どこでもマウントに乗れるようにする
     uint8  unity_leader_trust_coefficient; // ユニティリーダーが使えるようになるためのユニティポイント系数
     uint16 mounted_time_limit; // マウントの騎乗時間
+    float  support_job_exp_rate; // サポートジョブにも経験値を獲得できるようにする
 };
 
 /************************************************************************

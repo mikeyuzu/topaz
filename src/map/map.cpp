@@ -1524,6 +1524,10 @@ int32 map_config_read(const int8* cfgName)
         {
             map_config.mounted_time_limit = atoi(w2);
         }
+        else if (strcmp(w1, "support_job_exp_rate") == 0)
+        {
+            map_config.support_job_exp_rate = atoi(w2);
+        }
         else
         {
             ShowWarning(CL_YELLOW "Unknown setting '%s' in file %s\n" CL_RESET, w1, cfgName);
