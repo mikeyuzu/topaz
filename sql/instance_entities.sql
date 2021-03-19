@@ -56,6 +56,7 @@ INSERT INTO `instance_entities` VALUES (1,17059855);
 INSERT INTO `instance_entities` VALUES (1,17060014);
 INSERT INTO `instance_entities` VALUES (1,17060015);
 INSERT INTO `instance_entities` VALUES (1,17060138);
+INSERT INTO `instance_entities` VALUES (1,17060142);
 INSERT INTO `instance_entities` VALUES (1,17060146);
 INSERT INTO `instance_entities` VALUES (1,17060147);
 
