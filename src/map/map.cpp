@@ -1074,6 +1074,13 @@ int32 map_config_default()
     map_config.daily_tally_limit           = 50000;
     map_config.seal_recast_time            = 300;
     map_config.seal_drop_rate              = 20;
+    map_config.drop_list_shuffle           = false;
+    map_config.blue_magic_learning_rate    = 33;
+    map_config.mob_link_radius             = 10;
+    map_config.mount_anywhere_area         = false;
+    map_config.unity_leader_trust_coefficient = 5;
+    map_config.mounted_time_limit          = 1800;
+    map_config.support_job_exp_rate        = 0.0f;
     return 0;
 }
 
