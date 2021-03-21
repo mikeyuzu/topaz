@@ -25,11 +25,11 @@ entity.onTrigger = function(player, npc)
         haveimperialIDtag = 0
     end
 
---[[    if (rank > 0) then
+    if (rank > 0) then
         player:startEvent(278, rank, haveimperialIDtag, tokens, player:getCurrentAssault())
-    else]]
+    else
         player:startEvent(284) -- no rank
-    --end
+    end
 end
 
 entity.onEventUpdate = function(player, csid, option)
