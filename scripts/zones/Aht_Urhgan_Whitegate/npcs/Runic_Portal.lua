@@ -11,6 +11,14 @@ require("scripts/globals/teleports")
 -----------------------------------
 local entity = {}
 
+local assault_area = {
+    [120] = tpz.teleport.id.AZOUPH_SP,
+    [121] = tpz.teleport.id.MAMOOL_SP,
+    [122] = tpz.teleport.id.HALVUNG_SP,
+    [123] = tpz.teleport.id.DVUCCA_SP,
+    [124] = tpz.teleport.id.ILRUSI_SP,
+}
+
 entity.onTrade = function(player, npc, trade)
 end
 
@@ -44,7 +52,7 @@ entity.onEventFinish = function(player, csid, option)
             player:delCurrency("imperial_standing", 200)
         end
     elseif csid >= 120 and csid <= 125 and option == 1 then -- Has Assault Orders
-        offset = csid - 120
+        offset = assault_area[csid] - tpz.teleport.id.AZOUPH_SP
     end
 
     if offset then
