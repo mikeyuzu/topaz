@@ -60,6 +60,45 @@ INSERT INTO `instance_entities` VALUES (1,17060142);
 INSERT INTO `instance_entities` VALUES (1,17060146);
 INSERT INTO `instance_entities` VALUES (1,17060147);
 
+-- Imperial Agent Rescue 皇国エージェント救出作戦
+-- Mobs
+INSERT INTO `instance_entities` VALUES (11, 17047553); -- Mamool Ja Warder
+INSERT INTO `instance_entities` VALUES (11, 17047554); -- Mamool Ja Warder
+INSERT INTO `instance_entities` VALUES (11, 17047556); -- Mamool Ja Warder
+INSERT INTO `instance_entities` VALUES (11, 17047557); -- Mamool Ja Warder
+INSERT INTO `instance_entities` VALUES (11, 17047559); -- Mamool Ja Warder
+INSERT INTO `instance_entities` VALUES (11, 17047560); -- Mamool Ja Warder
+INSERT INTO `instance_entities` VALUES (11, 17047561); -- Mamool Ja Warder
+INSERT INTO `instance_entities` VALUES (11, 17047562); -- Mamool Ja's Lizard
+INSERT INTO `instance_entities` VALUES (11, 17047563); -- Mamool Ja Warder
+INSERT INTO `instance_entities` VALUES (11, 17047564); -- Mamool Ja Warder
+INSERT INTO `instance_entities` VALUES (11, 17047565); -- Mamool Ja Warder
+INSERT INTO `instance_entities` VALUES (11, 17047566); -- Mamool Ja Warder
+-- Npcs
+INSERT INTO `instance_entities` VALUES (11, 17047567); -- Dilapidated Gate
+INSERT INTO `instance_entities` VALUES (11, 17047568); -- Dilapidated Gate
+INSERT INTO `instance_entities` VALUES (11, 17047569); -- Dilapidated Gate
+INSERT INTO `instance_entities` VALUES (11, 17047808); -- Ancient Lockbox
+INSERT INTO `instance_entities` VALUES (11, 17047809); -- Rune of Release
+INSERT INTO `instance_entities` VALUES (11, 17047810); -- Brujeel
+INSERT INTO `instance_entities` VALUES (11, 17047815); -- Supplies Crate
+INSERT INTO `instance_entities` VALUES (11, 17047832); -- Zahakahm
+INSERT INTO `instance_entities` VALUES (11, 17047863); -- _1u4
+INSERT INTO `instance_entities` VALUES (11, 17047864); -- _1u5
+INSERT INTO `instance_entities` VALUES (11, 17047865); -- _1u6
+INSERT INTO `instance_entities` VALUES (11, 17047866); -- _1u7
+INSERT INTO `instance_entities` VALUES (11, 17047895); -- _ju0
+INSERT INTO `instance_entities` VALUES (11, 17047896); -- _ju1
+INSERT INTO `instance_entities` VALUES (11, 17047897); -- _ju2
+INSERT INTO `instance_entities` VALUES (11, 17047898); -- _ju3
+INSERT INTO `instance_entities` VALUES (11, 17047899); -- _ju4
+INSERT INTO `instance_entities` VALUES (11, 17047900); -- _ju5
+INSERT INTO `instance_entities` VALUES (11, 17047901); -- _ju6
+INSERT INTO `instance_entities` VALUES (11, 17047902); -- _ju7
+INSERT INTO `instance_entities` VALUES (11, 17047916); -- Pot Hatch
+INSERT INTO `instance_entities` VALUES (11, 17047917); -- Pot Hatch
+INSERT INTO `instance_entities` VALUES (11, 17047918); -- Pot Hatch
+
 -- Preemtive Strike
 -- Mobs
 INSERT INTO `instance_entities` VALUES (12, 17047570);

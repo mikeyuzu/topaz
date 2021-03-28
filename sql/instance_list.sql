@@ -57,7 +57,7 @@ INSERT INTO `instance_list` VALUES (1,'leujaoam_cleansing',69,79,30,280.000,-7.5
 -- INSERT INTO `instance_list` VALUES (8,'imperial_code',69,79,30,0.000,0.000,0.000,0,-1,-1,-1,-1);
 -- INSERT INTO `instance_list` VALUES (9,'red_versus_blue',69,79,30,0.000,0.000,0.000,0,-1,-1,-1,-1);
 -- INSERT INTO `instance_list` VALUES (10,'bloody_rondo',69,79,30,0.000,0.000,0.000,0,-1,-1,-1,-1);
--- INSERT INTO `instance_list` VALUES (11,'imperial_agent_rescue',66,52,30,0.000,0.000,0.000,0,-1,-1,-1,-1);
+INSERT INTO `instance_list` VALUES (11,'imperial_agent_rescue',66,52,30,-20.000,2.271,-405.000,92,-1,-1,-1,-1);
 INSERT INTO `instance_list` VALUES (12,'preemptive_strike',66,52,30,-60.35,-5.0,27.67,46,-1,-1,-1,-1);
 -- INSERT INTO `instance_list` VALUES (13,'sagelord_elimination',66,52,30,0.000,0.000,0.000,0,-1,-1,-1,-1);
 -- INSERT INTO `instance_list` VALUES (14,'breaking_morale',66,52,15,0.000,0.000,0.000,0,-1,-1,-1,-1);

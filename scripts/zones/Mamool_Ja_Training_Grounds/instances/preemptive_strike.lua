@@ -8,13 +8,12 @@ local instance_object = {}
 
 instance_object.afterInstanceRegister = function(player)
     local instance = player:getInstance()
-    player:messageSpecial(ID.text.ASSAULT_12_START, 12)
+    player:messageSpecial(ID.text.ASSAULT_12_START, PREEMPTIVE_STRIKE)
     player:messageSpecial(ID.text.TIME_TO_COMPLETE, instance:getTimeLimit())
 end
 
 instance_object.onInstanceCreated = function(instance)
-
-    for i, v in pairs(ID.mob[1]) do
+    for i, v in pairs(ID.mob[PREEMPTIVE_STRIKE]) do
         SpawnMob(v, instance)
     end
 
