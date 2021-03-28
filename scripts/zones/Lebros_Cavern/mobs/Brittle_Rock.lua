@@ -17,16 +17,16 @@ end
 
 entity.onMobDeath = function(mob, player, isKiller)
     local instance = mob:getInstance()
-    if mob:getID() == ID.mob[21].BRITTLE_ROCK1 then
+    if mob:getID() == ID.mob[EXCAVATION_DUTY].BRITTLE_ROCK1 then
         GetNPCByID(ID.npc._1rx, instance):setAnimation(8)
-    elseif mob:getID() == ID.mob[21].BRITTLE_ROCK2 then
+    elseif mob:getID() == ID.mob[EXCAVATION_DUTY].BRITTLE_ROCK2 then
         GetNPCByID(ID.npc._1ry, instance):setAnimation(8)
-    elseif mob:getID() == ID.mob[21].BRITTLE_ROCK3 then
+    elseif mob:getID() == ID.mob[EXCAVATION_DUTY].BRITTLE_ROCK3 then
         GetNPCByID(ID.npc._1rz, instance):setAnimation(8)
-    elseif mob:getID() == ID.mob[21].BRITTLE_ROCK4 then
-        GetNPCByID(ID.npc._ir0, instance):setAnimation(8)
-    elseif mob:getID() == ID.mob[21].BRITTLE_ROCK5 then
-        GetNPCByID(ID.npc._ir1, instance):setAnimation(8)
+    elseif mob:getID() == ID.mob[EXCAVATION_DUTY].BRITTLE_ROCK4 then
+        GetNPCByID(ID.npc._jr0, instance):setAnimation(8)
+    elseif mob:getID() == ID.mob[EXCAVATION_DUTY].BRITTLE_ROCK5 then
+        GetNPCByID(ID.npc._jr1, instance):setAnimation(8)
     end
 end
 

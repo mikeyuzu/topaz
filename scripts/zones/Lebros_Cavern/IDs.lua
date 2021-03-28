@@ -1,6 +1,7 @@
 -----------------------------------
 -- Area: Lebros_Cavern
 -----------------------------------
+require("scripts/globals/missions")
 require("scripts/globals/zone")
 -----------------------------------
 
@@ -43,7 +44,7 @@ zones[tpz.zone.LEBROS_CAVERN] =
 
     mob = {
         -- Escavation Duty
-        [21] =
+        [EXCAVATION_DUTY] =
         {
             VOLCANIC_BOMB1   = 17035265,
             VOLCANIC_BOMB2   = 17035266,
@@ -69,11 +70,11 @@ zones[tpz.zone.LEBROS_CAVERN] =
             BRITTLE_ROCK5    = 17035290,
         },
         -- Lebros Suplies
-        [22] =
+        [LEBROS_SUPPLIES] =
         {
         },
         -- Troll Figitives
-        [23] =
+        [TROLL_FUGITIVES] =
         {
             TROLL_FUGITIVE1  = 17035310,
             TROLL_FUGITIVE2  = 17035311,
@@ -93,19 +94,19 @@ zones[tpz.zone.LEBROS_CAVERN] =
 
         },
         -- Evade and Escape
-        [24] =
+        [EVADE_AND_ESCAPE] =
         {
         },
         -- Siegemaster Assassination
-        [25] =
+        [SIEGEMASTER_ASSASSINATION] =
         {
         },
         -- Apkallu Breeding
-        [26] =
+        [APKALLU_BREEDING] =
         {
         },
         -- Wamoura Farm Raid Assault
-        [27] =
+        [WAMOURA_FARM_RAID] =
         {
             RANCH_WAMOURA1  = 17035359,
             RANCH_WAMOURA2  = 17035360,
@@ -124,15 +125,15 @@ zones[tpz.zone.LEBROS_CAVERN] =
             RANCH_WAMOURA15 = 17035378,
         },
         -- Egg Conservation
-        [28] =
+        [EGG_CONSERVATION] =
         {
         },
         -- Operation Black Pearl
-        [29] =
+        [OPERATION__BLACK_PEARL] =
         {
         },
         -- Better Than One
-        [30] =
+        [BETTER_THAN_ONE] =
         {
         }
     },
@@ -149,8 +150,8 @@ zones[tpz.zone.LEBROS_CAVERN] =
         _1rx            = 17035537,
         _1ry            = 17035538,
         _1rz            = 17035539,
-        _ir0            = 17035540,
-        _ir1            = 17035541,
+        _jr0            = 17035540,
+        _jr1            = 17035541,
         _irc            = 17035552,
         _ire            = 17035554,
         QIQIRN_MINE1    = 17037312,
