@@ -140,6 +140,14 @@ zones[tpz.zone.LEBROS_CAVERN] =
 
     npc =
     {
+        --[[
+        attack this NPC, the position will be correct. Ç±ÇÃNPCÇ…çUåÇÇ≈Ç´ÇÍÇŒà íuÇ™ê≥ÇµÇ≠Ç»ÇÈ
+        BRITTLE_ROCK1   = 17035283,
+        BRITTLE_ROCK2   = 17035285,
+        BRITTLE_ROCK3   = 17035287,
+        BRITTLE_ROCK4   = 17035289,
+        BRITTLE_ROCK5   = 17035291,
+        ]]
         ANCIENT_LOCKBOX = 17035478,
         RUNE_OF_RELEASE = 17035479,
         _1r8            = 17035512,
@@ -152,8 +160,8 @@ zones[tpz.zone.LEBROS_CAVERN] =
         _1rz            = 17035539,
         _jr0            = 17035540,
         _jr1            = 17035541,
-        _irc            = 17035552,
-        _ire            = 17035554,
+        _jrc            = 17035552,
+        _jre            = 17035554,
         QIQIRN_MINE1    = 17037312,
         QIQIRN_MINE2    = 17037313,
         QIQIRN_MINE3    = 17037314,
