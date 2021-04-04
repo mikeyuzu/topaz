@@ -13,6 +13,8 @@ entity.onMobSpawn = function(mob)
     mob:SetAutoAttackEnabled(false)
     mob:setMod(tpz.mod.DEF, 1500)
     mob:setMod(tpz.mod.MDEF, 900)
+    mob:setMobMod(tpz.mobMod.EXP_BONUS, -100)
+    mob:setMobMod(tpz.mobMod.GIL_MAX, -1)
 end
 
 entity.onMobDeath = function(mob, player, isKiller)
