@@ -17,27 +17,16 @@ item_object.onItemCheck = function(target)
 end
 
 item_object.onItemUse = function(target)
+    local ID = zones[target:getZoneID()]
     local instance = target:getInstance()
-    local bomb = instance:insertAlly(10633)
     local X = target:getXPos()
+    local Y = target:getYPos()
     local Z = target:getZPos()
+    local R = 190
 
-    if (X > 161 and X < 184) and (Z > 359 and Z < 378)then
-        bomb:setSpawn(178, -40, 376, 196)
-        bomb:spawn()
-    elseif (X > 254 and X < 264) and (Z > 192 and Z < 218)then
-        bomb:setSpawn(258, -30, 213, 190)
-        bomb:spawn()
-    elseif (X > 327 and X < 343) and (Z > 278 and Z < 298)then
-        bomb:setSpawn(338, -30, 296, 197)
-        bomb:spawn()
-    elseif (X > 300 and X < 320) and (Z > 335 and Z < 343)then
-        bomb:setSpawn(303, -30, 341, 167)
-        bomb:spawn()
-    else
-        bomb:setSpawn(X + math.random(-2, 2), target:getYPos() , Z + math.random(-2, 2))
-        bomb:spawn()
-    end
+    local bomb = instance:insertAlly(23)
+    bomb:setSpawn(X, Y, Z, R)
+    bomb:spawn()
 
     bomb:updateEnmity(target)
 end

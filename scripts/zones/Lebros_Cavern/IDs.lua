@@ -68,6 +68,11 @@ zones[tpz.zone.LEBROS_CAVERN] =
             BRITTLE_ROCK3    = 17035286,
             BRITTLE_ROCK4    = 17035288,
             BRITTLE_ROCK5    = 17035290,
+            QIQIRN_MINE1     = 17037312,
+            QIQIRN_MINE2     = 17037313,
+            QIQIRN_MINE3     = 17037314,
+            QIQIRN_MINE4     = 17037315,
+            QIQIRN_MINE5     = 17037316,
         },
         -- Lebros Suplies
         [LEBROS_SUPPLIES] =
@@ -162,10 +167,6 @@ zones[tpz.zone.LEBROS_CAVERN] =
         _jr1            = 17035541,
         _jrc            = 17035552,
         _jre            = 17035554,
-        QIQIRN_MINE1    = 17037312,
-        QIQIRN_MINE2    = 17037313,
-        QIQIRN_MINE3    = 17037314,
-        QIQIRN_MINE4    = 17037315,
     }
 }
 

@@ -740,6 +740,17 @@ CBaseEntity* CZoneEntities::GetEntity(uint16 targid, uint8 filter)
             }
         }
     }
+    else
+    {
+        if (filter & TYPE_MOB)
+        {
+            EntityList_t::const_iterator it = m_mobList.find(targid);
+            if (it != m_mobList.end())
+            {
+                return it->second;
+            }
+        }
+    }
     return nullptr;
 }
 

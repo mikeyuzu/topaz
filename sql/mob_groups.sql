@@ -3093,6 +3093,7 @@ INSERT INTO `mob_groups` VALUES (19,837,63,'Crimson_Eruca',0,128,0,0,0,77,78,0);
 INSERT INTO `mob_groups` VALUES (20,4263,63,'Vulcanian_Bomb',0,128,0,0,0,72,74,0); -- TODO: capture level from retail
 INSERT INTO `mob_groups` VALUES (21,438,63,'Black_Shuck',0,128,0,25000,0,80,82,0);
 INSERT INTO `mob_groups` VALUES (22,2903,63,'Nocuous_Inferno',0,128,0,0,0,75,75,0); -- TODO: capture level from retail
+INSERT INTO `mob_groups` VALUES (23,3258,63,'Qiqirn_Mine',0,128,0,0,0,75,75,0);
 
 -- ------------------------------------------------------------
 -- Navukgo_Execution_Chamber (Zone 64)

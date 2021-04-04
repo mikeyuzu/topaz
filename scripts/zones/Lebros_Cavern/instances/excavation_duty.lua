@@ -15,7 +15,9 @@ end
 instance_object.onInstanceCreated = function(instance)
 
     for i, v in pairs(ID.mob[EXCAVATION_DUTY]) do
-        SpawnMob(v, instance)
+        if (v < ID.mob[EXCAVATION_DUTY].QIQIRN_MINE1 or v > ID.mob[EXCAVATION_DUTY].QIQIRN_MINE5) then
+            SpawnMob(v, instance)
+        end
     end
 
     GetNPCByID(ID.npc.RUNE_OF_RELEASE, instance):setPos(49.999, -40.837, 96.999, 0)
