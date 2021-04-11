@@ -1,6 +1,7 @@
 -----------------------------------
 -- Area: Periqia
 -----------------------------------
+require("scripts/globals/missions")
 require("scripts/globals/zone")
 -----------------------------------
 
@@ -61,7 +62,7 @@ zones[tpz.zone.PERIQIA] =
     mob =
     {
         -- Seagull Grounded
-        [31] =
+        [SEAGULL_GROUNDED] =
         {
             CRAB1      = 17006594,
             CRAB2      = 17006595,
@@ -82,7 +83,7 @@ zones[tpz.zone.PERIQIA] =
             DEBAUCHER3 = 17006611,
         },
         -- Requiem
-        [32] =
+        [REQUIEM] =
         {
             PUTRID_IMMORTAL_GUARD1 = 17006612,
             PUTRID_IMMORTAL_GUARD2 = 17006613,
@@ -104,7 +105,7 @@ zones[tpz.zone.PERIQIA] =
             DARKLING_DRAUGAR7      = 17006634,
         },
         -- Shades of Vengeance
-        [79] =
+        [tpz.mission.id.toau.SHADES_OF_VENGEANCE] =
         {
             K23H1LAMIA1  = 17006754,
             K23H1LAMIA2  = 17006755,

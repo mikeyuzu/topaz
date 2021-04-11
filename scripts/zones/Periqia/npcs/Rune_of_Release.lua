@@ -35,7 +35,7 @@ entity.onEventFinish = function(player, csid, option)
     local playerpoints = ((#chars -3)*100)
 
     if (csid == 100 and option == 1) then
-        if id == 32 then
+        if (id >= SEAGULL_GROUNDED and id <= THE_PRICE_IS_RIGHT) then
             points = 1000 - math.max(playerpoints, 0)
         end
         for i, v in pairs(chars) do

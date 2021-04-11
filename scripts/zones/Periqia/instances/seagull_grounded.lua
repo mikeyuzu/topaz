@@ -7,13 +7,13 @@ local instance_object = {}
 
 instance_object.afterInstanceRegister = function(player)
     local instance = player:getInstance()
-    player:messageSpecial(ID.text.ASSAULT_31_START, 1)
+    player:messageSpecial(ID.text.ASSAULT_31_START, SEAGULL_GROUNDED)
     player:messageSpecial(ID.text.TIME_TO_COMPLETE, instance:getTimeLimit())
 end
 
 instance_object.onInstanceCreated = function(instance)
 
-    for i, v in pairs(ID.mob[31]) do
+    for i, v in pairs(ID.mob[SEAGULL_GROUNDED]) do
         SpawnMob(v, instance)
     end
 
@@ -23,11 +23,11 @@ instance_object.onInstanceCreated = function(instance)
     box:setPos(-495, -9.695, -75, 0)
 
     GetNPCByID(ID.npc.EXCALIACE, instance):setStatus(1)
-    GetNPCByID(ID.npc._1K6, instance):setAnimation(8)
-    GetNPCByID(ID.npc._1KX, instance):setAnimation(8)
-    GetNPCByID(ID.npc._1KZ, instance):setAnimation(8)
-    GetNPCByID(ID.npc._JK1, instance):setAnimation(8)
-    GetNPCByID(ID.npc._JK3, instance):setAnimation(8)
+    --GetNPCByID(ID.npc._1K6, instance):setAnimation(8)
+    --GetNPCByID(ID.npc._1KX, instance):setAnimation(8)
+    --GetNPCByID(ID.npc._1KZ, instance):setAnimation(8)
+    --GetNPCByID(ID.npc._JK1, instance):setAnimation(8)
+    --GetNPCByID(ID.npc._JK3, instance):setAnimation(8)
 
 end
 

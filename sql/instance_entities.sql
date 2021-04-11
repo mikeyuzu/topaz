@@ -246,12 +246,15 @@ INSERT INTO `instance_entities` VALUES (31,17006836);
 INSERT INTO `instance_entities` VALUES (31,17006841);
 INSERT INTO `instance_entities` VALUES (31,17006842);
 INSERT INTO `instance_entities` VALUES (31,17006843);
+INSERT INTO `instance_entities` VALUES (31,17006845);
 INSERT INTO `instance_entities` VALUES (31,17006848);
 INSERT INTO `instance_entities` VALUES (31,17006852);
 INSERT INTO `instance_entities` VALUES (31,17006868);
 INSERT INTO `instance_entities` VALUES (31,17006870);
 INSERT INTO `instance_entities` VALUES (31,17006872);
 INSERT INTO `instance_entities` VALUES (31,17006874);
+INSERT INTO `instance_entities` VALUES (31,17006876);
+INSERT INTO `instance_entities` VALUES (31,17006878);
 
 -- Requiem
 -- mobs

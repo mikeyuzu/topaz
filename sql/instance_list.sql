@@ -77,7 +77,7 @@ INSERT INTO `instance_list` VALUES (23,'troll_fugitives',63,61,30,-459.912,-9.86
 -- INSERT INTO `instance_list` VALUES (28,'egg_conservation',63,61,30,0.000,0.000,0.000,0,-1,-1,-1,-1);
 -- INSERT INTO `instance_list` VALUES (29,'operation:black_pearl',63,61,30,0.000,0.000,0.000,0,-1,-1,-1,-1);
 -- INSERT INTO `instance_list` VALUES (30,'better_than_one',63,61,30,0.000,0.000,0.000,0,-1,-1,-1,-1);
--- INSERT INTO `instance_list` VALUES (31,'seagull_grounded',56,79,30,-350,-15.245,380,0,-1,-1,-1,-1);
+INSERT INTO `instance_list` VALUES (31,'seagull_grounded',56,79,30,-350,-15.245,380,0,-1,-1,-1,-1);
 INSERT INTO `instance_list` VALUES (32,'requiem',56,79,30,-458.409,-10.000,-320.966,90,-1,-1,-1,-1);
 -- INSERT INTO `instance_list` VALUES (33,'saving_private_ryaaf',56,79,30,0.000,0.000,0.000,0,-1,-1,-1,-1);
 -- INSERT INTO `instance_list` VALUES (34,'shooting_down_the_baron',56,79,15,0.000,0.000,0.000,0,-1,-1,-1,-1);

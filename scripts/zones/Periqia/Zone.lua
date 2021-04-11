@@ -35,7 +35,7 @@ zone_object.onEventFinish = function(player, csid, option)
     local chars = instance:getChars()
     if csid == 102 then
         for i, v in pairs(chars) do
-            v:setPos(0, 0, 0, 0, 79)
+            v:setPos(0, 0, 0, 0, tpz.zone.CAEDARVA_MIRE)
         end
     end
 end
