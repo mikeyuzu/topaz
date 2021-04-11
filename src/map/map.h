@@ -151,15 +151,15 @@ struct map_config_t
     uint16      daily_tally_amount;     // Amount of daily tally points given at midnight for Gobbie Mystery Box
     uint16      daily_tally_limit;      // Upper limit of daily tally points for Gobbie Mystery Box
 
-    uint16 seal_recast_time; // 印章ドロップリキャスト時間
-    uint8  seal_drop_rate; // 印章ドロップ率
-    bool   drop_list_shuffle; // ドロップ抽選順番をシャッフルする
-    uint8  blue_magic_learning_rate; // 青魔法ラーニング確率
-    uint8  mob_link_radius; // モンスターのリンクする距離
-    bool   mount_anywhere_area;      // どこでもマウントに乗れるようにする
+    uint16 seal_recast_time;            // 印章ドロップリキャスト時間
+    uint8  seal_drop_rate;              // 印章ドロップ率
+    bool   drop_list_shuffle;           // ドロップ抽選順番をシャッフルする
+    uint8  blue_magic_learning_rate;    // 青魔法ラーニング確率
+    uint8  mob_link_radius;             // モンスターのリンクする距離
+    bool   mount_anywhere_area;         // どこでもマウントに乗れるようにする
     uint8  unity_leader_trust_coefficient; // ユニティリーダーが使えるようになるためのユニティポイント系数
-    uint16 mounted_time_limit; // マウントの騎乗時間
-    float  support_job_exp_rate; // サポートジョブにも経験値を獲得できるようにする
+    uint16 mounted_time_limit;          // マウントの騎乗時間
+    float  support_job_exp_rate;        // サポートジョブにも経験値を獲得できるようにする
 };
 
 /************************************************************************

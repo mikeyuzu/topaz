@@ -1533,7 +1533,7 @@ int32 map_config_read(const int8* cfgName)
         }
         else if (strcmp(w1, "support_job_exp_rate") == 0)
         {
-            map_config.support_job_exp_rate = atoi(w2);
+            map_config.support_job_exp_rate = atof(w2);
         }
         else
         {
